@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    gcp:
+      spanner:
+        project-id: emulator-config
+
+  r2dbc:
+    url: overwritten_in_tests
+    properties:
+      usePlainText: true
+      autoConfigEmulator: true
