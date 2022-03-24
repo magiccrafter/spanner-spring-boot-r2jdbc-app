@@ -55,7 +55,7 @@ public class SpannerIT {
     @DynamicPropertySource
     static void properties(DynamicPropertyRegistry r) {
         environmentVariables.set("SPANNER_EMULATOR_HOST", spannerContainer.getEmulatorGrpcEndpoint());
-        r.add("spring.r2dbc.url", () -> "r2dbc:cloudspanner://" + spannerContainer.getEmulatorGrpcEndpoint() +
+        r.add("spring.r2dbc.url", () -> "r2dbc:cloudspanner://" +
             "/projects/" + PROJECT_ID + "/instances/" + INSTANCE_ID + "/databases/" + DATABASE_NAME);
     }
 
