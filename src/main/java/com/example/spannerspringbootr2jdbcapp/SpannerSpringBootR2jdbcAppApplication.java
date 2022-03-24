@@ -9,5 +9,4 @@ public class SpannerSpringBootR2jdbcAppApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpannerSpringBootR2jdbcAppApplication.class, args);
 	}
-
 }

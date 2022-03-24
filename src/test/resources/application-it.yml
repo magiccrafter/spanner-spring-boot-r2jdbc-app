@@ -2,10 +2,9 @@ spring:
   cloud:
     gcp:
       spanner:
-        project-id: emulator-config
+        project-id: nv-local
 
   r2dbc:
     url: overwritten_in_tests
     properties:
       usePlainText: true
-      autoConfigEmulator: true
